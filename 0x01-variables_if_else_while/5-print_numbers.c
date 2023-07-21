@@ -8,17 +8,11 @@
 
 int main(void)
 {
-	char ch;
-
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (int i = 0; i <= 9; i++)
 	{
-		if (ch == 'q' || ch == 'e')
-		{
-			continue;
-		}
-
-		putchar(ch);
+		printf("%d", i);
 	}
+
 	putchar('\n');
 
 	return (0);
