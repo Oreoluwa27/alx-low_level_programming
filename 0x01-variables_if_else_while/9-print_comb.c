@@ -15,7 +15,6 @@ int main(void)
 		putchar('0' + i);
 		if (i == 9)
 		{
-			putchar(' ');
 			break;
 		}
 		else
@@ -24,6 +23,8 @@ int main(void)
 			putchar(' ');
 		}
 	}
+
+	putchar('\n');
 
 	return (0);
 }
