@@ -21,28 +21,28 @@ int main(void)
 
 			if (i <= 9)
 			{
-				putchar('0' + i);
+				putchar('0');
 			}
 			
-			putchar('0' + i);
+			putchar(i);
 			putchar(' ');
 
 			if (j <= 9)
 			{
-				putchar('0' + j);
+				putchar('0');
 			}
 
-			putchar('0' + j);
+			putchar(j);
 
 			if (i == 98 && j == 99)
 			{
 				break;
 			}
 			putchar(',');
-                }
-        }
+		}
+	}
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
 }
