@@ -8,19 +8,21 @@
 
 int main(void)
 {
-	int i, ch;
+	int i;
 
 	for (i = 0; i <= 9; i++)
 	{
 		putchar('0' + i);
+		if (i == 9)
+		{
+			break;
+		}
+		else
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
-	}
-
-	putchar('\n');
 
 	return (0);
 }
