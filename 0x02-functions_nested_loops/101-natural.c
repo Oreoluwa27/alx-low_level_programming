@@ -24,7 +24,7 @@ int main(void)
 			{
 				sum = sum + a;
 			}
-			else (b == 0)
+			else
 			{
 				sum = sum + b;
 			}
