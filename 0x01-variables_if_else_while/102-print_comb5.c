@@ -19,26 +19,21 @@ int main(void)
 				continue;
 			}
 
-			if (i <= 9)
-			{
-				putchar('0');
-			}
-			
-			putchar(i);
+			putchar(i/10 + '0');
+			putchar(i%10 + '0');
+
 			putchar(' ');
 
-			if (j <= 9)
-			{
-				putchar('0');
-			}
+			putchar(j/10 + '0');
+			putchar(j%10 + '0');
 
-			putchar(j);
 
 			if (i == 98 && j == 99)
 			{
 				break;
 			}
 			putchar(',');
+			putchar(' ');
 		}
 	}
 
