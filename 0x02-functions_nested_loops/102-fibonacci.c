@@ -16,7 +16,7 @@ int main(void)
 		a = b;
 		b = sum;
 		
-		if (i = 50)
+		if (i == 50)
 		{
 			printf("%d\n", sum);
 		}
