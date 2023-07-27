@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i, a = 0, b = 1;
-	long long sum;
+	unsigned long sum;
 
 	for (i = 1; i <= 50; i++)
 	{
@@ -19,11 +19,11 @@ int main(void)
 
 		if (i == 50)
 		{
-			printf("%lld\n", sum);
+			printf("%lu\n", sum);
 		}
 		else
 		{
-			printf("%lld, ", sum);
+			printf("%lu, ", sum);
 		}
 	}
 
