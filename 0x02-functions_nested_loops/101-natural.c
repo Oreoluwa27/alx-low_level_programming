@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Lists all the natural numbers below 1024 (excluded)
  *        that are multiples of 3 or 5.
  *
@@ -22,11 +21,11 @@ int main(void)
 		{
 			if (a == 0)
 			{
-				sum = sum + a;
+				sum = sum + i;
 			}
 			else
 			{
-				sum = sum + b;
+				sum = sum + i;
 			}
 		}
 	}
