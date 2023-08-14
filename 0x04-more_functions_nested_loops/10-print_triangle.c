@@ -1,4 +1,4 @@
-iinclude "main.h"
+include "main.h"
 /**
  * print_triangle - prints a triangle 
  * @size: size of triangle
@@ -23,8 +23,8 @@ void print _triangle(int size)
 				_putchar('#');
 			}
 			k++;
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 }
