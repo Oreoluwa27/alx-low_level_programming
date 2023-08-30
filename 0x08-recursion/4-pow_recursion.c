@@ -24,5 +24,6 @@ int _pow_recursion(int x, int y)
 	{
 		mul = mul * x;
 		_pow_recursion(mul, y - 1);
+		return (mul);
 	}
 }
