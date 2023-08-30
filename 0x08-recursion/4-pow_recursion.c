@@ -8,7 +8,7 @@
 
 int _pow_recursion(int x, int y)
 {
-	int mul = x;
+
 
 	if (y == 0)
 	{
@@ -22,8 +22,8 @@ int _pow_recursion(int x, int y)
 
 	else
 	{
-		_pow_recursion(x, y - 1);
-		mul = mul * x;
-		return (mul);
+		x = x * _pow_recursion(x, y - 1);
+
+		return (x);
 	}
 }
