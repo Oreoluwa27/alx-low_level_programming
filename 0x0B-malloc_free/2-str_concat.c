@@ -11,8 +11,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *s
-	int len1 = 0, len2 = 0, total, i, j, k = 0;
+	char *s;
+	int len1 = 0, len2 = 0, total, i, j;
 
 	if (s1 != NULL && s2 != NULL)
 	{
@@ -42,11 +42,12 @@ char *str_concat(char *s1, char *s2)
 			*(s + i) = *(s1 + i);
 		}
 
-		for (j = len1; j < len2; j++)
+		for (j = 0; j < len2; j++, i++)
 		{
-			*(s + j) = *(s2 + k);
-			k++;
+			*(s + i) = *(s2 + j);
 		}
+
+		*(s + total) = '\0';
 
 		return (s);
 	}
