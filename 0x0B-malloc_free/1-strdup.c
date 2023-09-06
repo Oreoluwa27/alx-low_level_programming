@@ -10,16 +10,16 @@
 char *_strdup(char *str)
 {
 	char *s;
-	int i, j;
+	int i, len, j;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 1; i != '\0'; i++)
+	for (i = 0; i != '\0'; i++)
 	{
-		continue;
+		len++;
 	}
 
 
@@ -30,7 +30,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (j = 0; j < i; j++)
+	for (j = 0; j < len; j++)
 	{
 		*(s + j) = *(str + j);
 	}

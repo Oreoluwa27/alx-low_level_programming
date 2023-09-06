@@ -12,7 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s
-	int len1 = 0, len2 = 0, total;
+	int len1 = 0, len2 = 0, total, i, j, k = 0;
 
 	if (s1 != NULL && s2 != NULL)
 	{
@@ -35,6 +35,17 @@ char *str_concat(char *s1, char *s2)
 		if (s == NULL)
 		{
 			return (NULL);
+		}
+
+		for (i = 0; i < len1; i++)
+		{
+			*(s + i) = *(s1 + i);
+		}
+
+		for (j = len1; j < len2; j++)
+		{
+			*(s + j) = *(s2 + k);
+			k++;
 		}
 
 		return (s);
