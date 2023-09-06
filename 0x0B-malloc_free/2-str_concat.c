@@ -27,30 +27,31 @@ char *str_concat(char *s1, char *s2)
 			len2++;
 			s2++;
 		}
-
-		total = len1 + len2;
-
-		s = malloc((total * sizeof(char)) + 1);
-
-		if (s == NULL)
-		{
-			return (NULL);
-		}
-
-		for (i = 0; i < len1; i++)
-		{
-			*(s + i) = *(s1 + i);
-		}
-
-		for (j = 0; j < len2; j++, i++)
-		{
-			*(s + i) = *(s2 + j);
-		}
-
-		*(s + total) = '\0';
-
-		return (s);
 	}
+	total = len1 + len2;
+
+	s = malloc((total * sizeof(char)) + 1);
+
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < len1; i++)
+	{
+		*(s + i) = *(s1 + i);
+	}
+
+	for (j = 0; j < len2; j++, i++)
+	{
+		*(s + i) = *(s2 + j);
+	}
+
+	*(s + total) = '\0';
+	
+
+	return (s);
+	
 }
 
 
