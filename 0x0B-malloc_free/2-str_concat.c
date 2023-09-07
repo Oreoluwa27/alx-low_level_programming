@@ -14,7 +14,7 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 	int len1 = 0, len2 = 0, total, i = 0, j = 0;
 
-	if (s1 != NULL) 
+	if (s1 != NULL)
 	{
 		while(s1[i])
 		{
@@ -51,10 +51,10 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	s[total] = '\0';
-	
+
 
 	return (s);
-	
+
 }
 
 
