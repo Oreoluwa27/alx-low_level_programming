@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "list.h"
+#include "lists.h"
 
 /**
  * print_list - prints element of linked list
@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 {
 	size_t node_count = 0;
 
-	list_t *temp = h;
+	const list_t *temp = h;
 
 	while (temp != NULL)
 	{
