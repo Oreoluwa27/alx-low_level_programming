@@ -5,6 +5,7 @@
 /**
  * add_node - add node to linked list
  * @head: pointer to pointer that points to start of a list
+ * @str: string
  *
  * Return: NULL for failure or address of new node
  */
