@@ -5,7 +5,7 @@
  * print_listint - prints element of the linked list
  * @h: pointer to the first element of the linked list
  *
- * Return: number of nodes 
+ * Return: number of nodes
  *
  */
 
